@@ -12,7 +12,7 @@
             background-color:rgb(0, 0, 0);
             margin: 0; 
             padding: 0;
-            font-family: "UnifrakturMaguntia", sans-serif;
+            font-family: "Metropolis", sans-serif;
         }
         #text {
             font-size: 2.5rem; 
@@ -113,6 +113,53 @@
                 margin: 20px 0;
             }
         }
+
+        .bottom-menu {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.9);
+            border-top: 2px solid #BAA02C;
+            display: flex;
+            justify-content: space-around;
+            padding: 12px 0;
+            z-index: 1000;
+        }
+
+        .menu-btn {
+            color: #BAA02C;
+            text-align: center;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            flex: 1;
+            transition: all 0.3s;
+        }
+
+        .menu-btn i {
+            display: block;
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        .menu-btn:hover {
+            color: #FFD700;
+            transform: translateY(-3px);
+            text-shadow: 0 0 10px rgba(186, 160, 44, 0.7);
+        }
+
+        /* Responsive cho mobile */
+        @media (max-width: 600px) {
+            .menu-btn {
+                font-size: 12px;
+            }
+            .menu-btn i {
+                font-size: 20px;
+            }
+        }
     </style>
 </head>
 
@@ -147,5 +194,35 @@
         <a href="https://instagram.com/davidgoggins" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
         <a href="https://www.youtube.com/watch?v=BM-Yf-DXhMM" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
     </div>
+
+    <div class="bottom-menu">
+        <a href="#bio" class="menu-btn">
+            <i class="fas fa-user"></i>
+            Tiểu sử
+        </a>
+        <a href="#books" class="menu-btn">
+            <i class="fas fa-book"></i>
+            Sách
+        </a>
+        <a href="#message" class="menu-btn">
+            <i class="fas fa-quote-left"></i>
+            Thông điệp
+        </a>
+    </div>
+
+    <section id="bio" style="height: 100vh; padding: 20px;">
+        <h2>TIỂU SỬ DAVID GOGGINS</h2>
+        <p>Nội dung tiểu sử ở đây...</p>
+    </section>
+
+    <section id="books" style="height: 100vh; padding: 20px;">
+        <h2>SÁCH CỦA GOGGINS</h2>
+        <p>Nội dung sách ở đây...</p>
+    </section>
+
+    <section id="message" style="height: 100vh; padding: 20px;">
+        <h2>THÔNG ĐIỆP</h2>
+        <p>Nội dung thông điệp ở đây...</p>
+    </section>
 </body>
 </html>
