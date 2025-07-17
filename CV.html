@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>DAVID PROFILE</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        body {
+            background-color:rgb(0, 0, 0);
+            margin: 0; padding: 0;
+        }
+        #text {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 30px; 
+            font-weight:bold;
+            color: rgb(186, 160, 44);    
+
+            display: flex;              
+            flex-direction: column;           
+            justify-content:center;
+            align-items: center;
+            padding-top: 10px;
+    }
+
+        .image {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 30px; 
+            font-weight:bold;
+            color: rgb(186, 160, 44);
+
+            display: flex;          
+            align-items: start;    
+            flex-direction: row;           
+            justify-content:center;
+            gap:20px;
+            padding:20px;
+            margin-left: 0;
+            transition: transform 1s;
+        }
+        .image img {
+            transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1); 
+            will-change: transform; 
+            border: 3px solid transparent;
+        }
+        .image img:hover {
+            transform: scale(1.1); 
+            border-color: rgb(186, 160, 44); 
+            box-shadow: 0 0 20px rgba(186, 160, 44, 0.7); 
+        }
+        .column.left {
+            text-align: right;
+            padding:10px;
+            margin-left: 0;
+            padding-left: 10px10px;
+            padding-right: 00;
+
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+            padding-bottom: 20px;
+        }
+        .social-icons a {
+            color: rgb(186, 160, 44);
+            font-size: 50px;
+            transition: transform 0.3s;
+        }
+        .social-icons a:hover {
+            transform: scale(1.4);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="name">
+        <div id="text"><h1><u>DAVID GOGGINS</u></h1></div>
+    </div>
+    <div class="image">
+        <div class="column left">
+            <p>-Completed Navy SEAL training, U.S. Army Ranger School (graduated with honors)</p>
+            
+            <p>-Air Force Tactical Air Controller training – the only person in history to complete all three elite programs.</p>
+
+            <p>-Competed in over 60 ultra-endurance races, including numerous 100-mile and 200-mile ultramarathons.</p>
+        </div>
+
+        <img src="image/david.webp" title="CANT HURT ME BY DAVID GOGGINS">
+
+        <div class="column right">
+            <p>-Set a Guinness World Record in 2013 by doing 4,030 pull-ups in 17 hours.</p>
+            
+            <p>-Author of two #1 bestsellers: <em>Can't Hurt Me</em> and <em>Never Finished</em>.</p>
+
+            <p>-Frequently recognized as one of the toughest individuals in the world for his physical and mental achievements.</p>
+            
+            <p>-Inspires millions through public speaking, podcasts, and his story of transformation.</p>
+        </div>
+    </div>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/iamdavidgoggins" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/davidgoggins" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com/davidgoggins" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/watch?v=BM-Yf-DXhMM" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+</body>
+</html>
